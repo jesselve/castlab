@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>castlab — Terminal Recording Demos</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #1a1b26;
+            color: #c0caf5;
+            padding: 2rem;
+        }
+        h1 { color: #7aa2f7; margin-bottom: 0.5rem; }
+        .subtitle { color: #565f89; margin-bottom: 2rem; }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: #24283b;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid #3b4261;
+            transition: border-color 0.2s;
+        }
+        .card:hover { border-color: #7aa2f7; }
+        .card h2 { color: #bb9af7; font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .card p { color: #9aa5ce; font-size: 0.9rem; margin-bottom: 1rem; }
+        .card a {
+            color: #7dcfff;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .card a:hover { text-decoration: underline; }
+        .empty {
+            color: #565f89;
+            font-style: italic;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>castlab</h1>
+    <p class="subtitle">Terminal recording demos — asciinema &amp; PowerSession</p>
+
+    <div class="gallery">
+        <!-- Copy this card block for each new demo:
+        <div class="card">
+            <h2>Demo Title</h2>
+            <p>Short description of what this demo shows.</p>
+            <a href="demos/demo-name.html">Watch demo →</a>
+        </div>
+        -->
+    </div>
+
+    <p class="empty">No demos yet — recordings coming soon.</p>
+</body>
+</html>
