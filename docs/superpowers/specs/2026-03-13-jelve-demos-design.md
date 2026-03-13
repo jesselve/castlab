@@ -63,10 +63,9 @@ Refactored from an existing working script. Compresses idle time gaps in `.cast`
 python compress_cast.py input.cast [-o output.cast] [--max-gap 1.0]
 ```
 
-- `input.cast` — required positional argument
-- `-o` / `--output` — output file, defaults to `<input>_compressed.cast`
+- `input.cast` — optional positional argument; reads from stdin when omitted
+- `-o` / `--output` — output file, defaults to `<input>_compressed.cast` (e.g., `demo.cast` → `demo_compressed.cast`). Required when reading from stdin.
 - `--max-gap` — maximum allowed gap in seconds, defaults to `1.0`
-- Reads from stdin if no file argument given (pipe-friendly)
 
 **Why this exists:** asciinema supports `--idle-time-limit` at record time, but PowerSession does not. This script fills that gap for Windows recordings and is also useful for any session where the flag wasn't used.
 
@@ -83,14 +82,14 @@ Written for internal audience — concise, practical, no polish overhead.
 ## README.md
 
 - One-paragraph overview
-- Link to live GitHub Pages site (`jesselve.github.io/jelve-demos`)
+- Link to live GitHub Pages site (`jesseelve.github.io/jelve-demos`)
 - Quick start steps: record, compress, publish
 - Pointers to `notes/` for guides and `scripts/` for tools
 
 ## GitHub Pages Configuration
 
 - Source: `main` branch, `/site` directory
-- URL: `jesselve.github.io/jelve-demos`
+- URL: `jesseelve.github.io/jelve-demos`
 - No custom domain
 
 ## Non-Goals
