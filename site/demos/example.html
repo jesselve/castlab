@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Demo — castlab</title>
+    <link rel="stylesheet" href="../assets/asciinema-player.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #1a1b26;
+            color: #c0caf5;
+            padding: 2rem;
+        }
+        h1 { color: #bb9af7; margin-bottom: 0.5rem; }
+        .description { color: #9aa5ce; margin-bottom: 1.5rem; }
+        .back { color: #7dcfff; text-decoration: none; display: inline-block; margin-bottom: 1.5rem; }
+        .back:hover { text-decoration: underline; }
+        #player { max-width: 900px; }
+    </style>
+</head>
+<body>
+    <a class="back" href="../index.html">← Back to gallery</a>
+    <h1>Example Demo</h1>
+    <p class="description">Replace this with a description of what the demo shows.</p>
+    <div id="player"></div>
+
+    <script src="../assets/asciinema-player.min.js"></script>
+    <script>
+        AsciinemaPlayer.create("../casts/example.cast", document.getElementById("player"), {
+            fit: "width",
+            fontSize: "16px",
+            theme: "dracula"
+        });
+    </script>
+</body>
+</html>
