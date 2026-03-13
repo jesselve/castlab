@@ -10,7 +10,7 @@ A toolkit and showcase for terminal session recordings using
 
 1. **Record** a terminal session (see [notes/](notes/) for guides)
 2. **Compress** idle time: `python scripts/compress_cast.py recording.cast`
-3. **Publish** by adding the `.cast` file and a player page to `site/`
+3. **Publish** by adding the `.cast` file and a player page to `docs/`
 
 See [notes/workflow.md](notes/workflow.md) for the full step-by-step process.
 
@@ -19,5 +19,5 @@ See [notes/workflow.md](notes/workflow.md) for the full step-by-step process.
 | Directory | Contents |
 |-----------|----------|
 | `scripts/` | Post-processing tools for `.cast` files |
-| `site/` | GitHub Pages gallery with embedded asciinema-player |
+| `docs/` | GitHub Pages gallery with embedded asciinema-player |
 | `notes/` | Practical guides for asciinema, PowerSession, and the publish workflow |
